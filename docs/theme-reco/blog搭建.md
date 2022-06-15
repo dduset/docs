@@ -89,11 +89,11 @@ ssh-keygen
 （一直回车，使用默认值）
 ```
 
-![1655286550601](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\1655286550601.png)
+![1655286550601](W:\vuepress-reco\vuepress-theme-reco-demo-demo-1.x\my-blog\docs\img\blog\1655286550601.png)
 
 密钥生成在c盘用户目录的.ssh文件夹中
 
-![1655286728933](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\1655286728933.png)
+![1655286728933](W:\vuepress-reco\vuepress-theme-reco-demo-demo-1.x\my-blog\docs\img\blog\1655286728933.png)
 
 
 
@@ -106,5 +106,23 @@ git status #查看被修改过的文件
 git add -A #将所有修改过的文件添加到暂存区中
 
 git commit -m 备注 #添加到本地仓库中
+```
+
+### 使用ssh将本地仓库推送到远程
+
+![1655287302235](W:\vuepress-reco\vuepress-theme-reco-demo-demo-1.x\my-blog\docs\img\blog\1655287302235.png)
+
+
+
+因为ssh比较长，所以需要起一个别名
+
+```
+git remote add origin_ssh ssh地址 #origin_ssh是别名
+```
+
+进行push
+
+```
+git push 别名 分支
 ```
 

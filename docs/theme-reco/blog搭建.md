@@ -1,6 +1,8 @@
 ---
 title: blog的搭建
-date: 2022-06-15 17:45
+date: 2022-06-15
+sidebar: 'auto'
+publish: true
 ---
 
 

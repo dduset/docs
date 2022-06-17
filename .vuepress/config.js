@@ -3,6 +3,7 @@ module.exports = {
   "description": "this is a blog",
   "dest": "public",
   "head": [
+    
     [
       "link",
       {
@@ -58,7 +59,7 @@ module.exports = {
         "",
         "theme",
         "plugin",
-        "api"
+        "api",
       ]
     },
     "type": "blog",

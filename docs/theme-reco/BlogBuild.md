@@ -3,6 +3,7 @@ title: blog的搭建
 date: 2022-06-15
 sidebar: 'auto'
 publish: true
+typora-root-url: ..\img
 ---
 
 
@@ -36,13 +37,11 @@ theme-cli init my-blog #my-blog 可替换成自己需要的项目名称
 
 输入后会出现一些信息配置：
 
-![1655284492727](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1655284492727.png)
+![1](W:\vuepress-reco\vuepress-theme-reco-demo-demo-1.x\my-blog\docs\img\blog\1.png)
 
-![1655284441352](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1655284441352.png)
+![1655285964223](W:\vuepress-reco\vuepress-theme-reco-demo-demo-1.x\my-blog\docs\img\blog\2.png)
 
-
-
-![1655285964223](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1655285964223.png)
+![3](W:\vuepress-reco\vuepress-theme-reco-demo-demo-1.x\my-blog\docs\img\blog\3.png)
 
 ### 创建好后进入工程目录，启动项目
 
@@ -91,11 +90,11 @@ ssh-keygen
 （一直回车，使用默认值）
 ```
 
-![1655286550601](W:\vuepress-reco\vuepress-theme-reco-demo-demo-1.x\my-blog\docs\img\blog\1655286550601.png)
+![1655286550601](/blog/4.png)
 
 密钥生成在c盘用户目录的.ssh文件夹中
 
-![1655286728933](W:\vuepress-reco\vuepress-theme-reco-demo-demo-1.x\my-blog\docs\img\blog\1655286728933.png)
+![1655286728933](/blog/5.png)
 
 
 
@@ -112,7 +111,7 @@ git commit -m 备注 #添加到本地仓库中
 
 ### 使用ssh将本地仓库推送到远程
 
-![1655287302235](W:\vuepress-reco\vuepress-theme-reco-demo-demo-1.x\my-blog\docs\img\blog\1655287302235.png)
+![1655287302235](/blog/6.png)
 
 
 
@@ -126,5 +125,18 @@ git remote add origin_ssh ssh地址 #origin_ssh是别名
 
 ```
 git push 别名 分支
+```
+
+## 写blog
+
+```
+# 新建一个 markdown 文件
+echo '# Hello VuePress!' > README.md	# Hello VuePress! 内容 ，README.md 文件名，类型
+
+# 开始写作
+vuepress dev .
+
+# 构建静态文件
+npm run build
 ```
 
